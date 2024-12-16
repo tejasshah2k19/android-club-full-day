@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ClubFullDay</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Signup</string>
+    <string name="firstname">Firstname</string>
+    <string name="enter_payment_amount">Enter Payment amount</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="submit">Submit</string>
+    <string name="_500">500</string>
+    <string name="_200">200</string>
+    <string name="_100">100</string>
+    <string name="_50">50</string>
+    <string name="_20">20</string>
+    <string name="_10">10</string>
+
+</resources>

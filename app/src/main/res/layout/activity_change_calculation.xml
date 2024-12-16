@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeCalculationActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChangeAmt"
+        android:inputType="number"
+        android:hint="@string/enter_payment_amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChangeAmtPay"
+        android:inputType="number"
+        android:layout_below="@+id/edtChangeAmt"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="@string/paid_amount"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChangeSubmit"
+        android:text="@string/submit"
+        android:layout_below="@+id/edtChangeAmtPay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChangeDiff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnChangeSubmit"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChangeRec"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnChangeSubmit"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_toEndOf="@id/tvChangeDiff"
+        android:layout_marginStart="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange500"
+        android:text="@string/_500"
+        android:layout_below="@id/tvChangeDiff"
+        android:layout_marginStart="50dp"
+        android:textSize="12pt"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChange500"
+        android:layout_toEndOf="@id/tvChange500"
+        android:layout_below="@id/tvChangeDiff"
+        android:layout_marginEnd="50dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange200"
+        android:text="@string/_200"
+        android:layout_below="@id/tvChange500"
+        android:layout_marginStart="50dp"
+        android:textSize="12pt"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChange200"
+        android:layout_toEndOf="@id/tvChange200"
+        android:layout_below="@id/edtChange500"
+        android:layout_marginEnd="50dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange100"
+        android:text="@string/_100"
+        android:layout_below="@id/tvChange200"
+        android:layout_marginStart="50dp"
+        android:textSize="12pt"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChange100"
+        android:layout_toEndOf="@id/tvChange100"
+        android:layout_below="@id/edtChange200"
+        android:layout_marginEnd="50dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange50"
+        android:text="@string/_50"
+        android:layout_below="@id/tvChange100"
+        android:layout_marginStart="50dp"
+        android:textSize="12pt"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChange50"
+        android:layout_toEndOf="@id/tvChange50"
+        android:layout_below="@id/edtChange100"
+        android:layout_marginEnd="50dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange20"
+        android:text="@string/_20"
+        android:layout_below="@id/tvChange50"
+        android:layout_marginStart="50dp"
+        android:textSize="12pt"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChange20"
+        android:layout_toEndOf="@id/tvChange20"
+        android:layout_below="@id/edtChange50"
+        android:layout_marginEnd="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChange10"
+        android:text="@string/_10"
+        android:layout_below="@id/tvChange20"
+        android:layout_marginStart="50dp"
+        android:textSize="12pt"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtChange10"
+        android:layout_toEndOf="@id/tvChange10"
+        android:layout_below="@id/edtChange20"
+        android:layout_marginEnd="50dp"
+        />
+
+
+</RelativeLayout>
