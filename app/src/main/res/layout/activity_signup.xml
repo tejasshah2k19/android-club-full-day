@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".SignupActivity">
 
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgSignup"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +39,43 @@
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
             android:layout_marginTop="50dp"
-
+            android:drawableStart="@drawable/ic_user"
             />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/rbtGroupSignupGender"
+            android:orientation="horizontal"
+            android:layout_below="@+id/edtSignupFirstName"
+        android:layout_marginStart="50dp"
+
+        >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:id="@+id/rbtSignupMale"
+                />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/rbtSignupFemale"
+            />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignupSubmit"
+        android:text="@string/signup"
+        android:layout_below="@id/rbtGroupSignupGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
 
 </RelativeLayout>
